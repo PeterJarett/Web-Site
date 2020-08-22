@@ -26,7 +26,7 @@ p {
 /* Barre de navigaiton */
 .top-barre {
     height: 44px;
-    background: linear-gradient(to bottom, black 80%, #1d1c1c);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8) 60%, rgba(0, 0, 0, 0.76));
 }
 
 .nav-content {
@@ -43,6 +43,7 @@ p {
 
 
 .menu li {
+    list-style: none;
     line-height: 44px;
     width: auto;
     text-align: center;
@@ -53,8 +54,8 @@ p {
     vertical-align: middle;
     line-height: top;
     font-size: 0.95rem;
-    opacity: 85%;
-    color: rgba(255, 255, 255, 0.781);
+    opacity: 70%;
+    color: rgb(233, 231, 231);
     text-decoration: none;
     transition: opacity cubic-bezier(0.25, 0.1, 0.25, 0.1) 0.3s;
 }
@@ -73,7 +74,7 @@ p {
 
 /* Div Introduction */
 .intro {
-    background: radial-gradient(#424040 -85%, black);
+    background: radial-gradient(rgba(32, 32, 32, 0.514) -99%, black);
     height: 95.5vh;
     display: flex;
 
@@ -167,7 +168,7 @@ p {
     position: relative;
     width: 100%;
     padding: 60px 0 40px;
-    height: 200px;
+    height: 185px;
 }
 
 .title-section h1 {
@@ -194,7 +195,7 @@ p {
     width: 100%;
     display: block;
     height: 1px;
-    background: linear-gradient(to bottom, #318ce7, #d5c043);
+    background: linear-gradient(to right, #318ce7, #d5c043);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -222,3 +223,64 @@ p {
 .group-text {
     padding-bottom: 45px;
 }
+
+/* Contenu de la section projets */
+#Projets {
+    width: 100%;
+    height: 100vh;
+}
+.sombre {
+    color: white;
+    background: radial-gradient(#424040 -85%, black);
+    overflow: hidden; 
+}
+
+.sombre h1 {
+    color: transparent;
+    font-size: 5rem;
+}
+.sombre h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.sombre .title-section {height: 175px;}
+.sombre .title-section::after {
+    height: 3px;
+}
+
+/* Contenu de la section programmation */
+#Programmation {
+    width: 100%;
+    height: 110vh;
+    background-color: #f2f5ff;
+}
+
+/* Contenu de la section electronique */
+#Electronique {
+    width: 100%;
+    height: 110vh;
+    background-color: #f2f5ff;
+}
+
+/* Contenu de la section reseaux */
+#Reseaux {
+    width: 100%;
+    height: 110vh;
+    background-color: #f2f5ff;
+}
+
+/* Contenu de la section cryptographie */
+#Cryptographie {
+    width: 100%;
+    height: 110vh;
+    background-color: #f2f5ff;
+}
+
+/* Contenu de la section biographies */
+#Biographies {
+    width: 100%;
+    height: 110vh;
+    background-color: #f2f5ff;
+}
+
