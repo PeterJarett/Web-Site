@@ -1,0 +1,245 @@
+/* Global */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin: 45px 0 25px;
+}
+
+.bold {
+    font-weight: bold;
+    color: #26446d ;
+}
+
+p {
+    padding-bottom: 6px;
+    text-align: justify ;
+}
+
+.code {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+/* Barre de navigaiton */
+.top-barre {
+    height: 44px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8) 60%, rgba(0, 0, 0, 0.76));
+}
+
+.nav-content {
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu li {
+    list-style: none;
+    line-height: 44px;
+    width: auto;
+    text-align: center;
+}
+
+.menu a {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: top;
+    font-size: 0.95rem;
+    opacity: 70%;
+    color: rgb(233, 231, 231);
+    text-decoration: none;
+    transition: opacity cubic-bezier(0.25, 0.1, 0.25, 0.1) 0.3s;
+}
+
+.menu a:hover {
+    opacity: 100%;
+}
+
+
+.menu p {color:white;}
+
+#logo {
+    width: 55px;
+    margin-top: 7px;
+}
+
+/* Div Introduction */
+.intro {
+    background: radial-gradient(rgba(32, 32, 32, 0.514) -99%, black);
+    height: 95.5vh;
+    display: flex;
+
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1270px;
+    width: 100%; 
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.intro-container {
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.intro-content {
+    z-index: 99;
+    flex: 0 0 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro-text h1 {
+    text-align: center;
+    font-size: 8.5rem;
+}
+
+.intro-text h1::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #318ce7, #d5c043 );
+}
+
+.intro-text h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 15px;
+
+}
+.wrapper img {
+    overflow: hidden;
+    position: absolute;
+    bottom: 50%;
+    transform: translate(0, 50%);
+    right: 0px;
+    width: 700px;
+    
+}
+
+/* Bouton de l'indroduction */
+
+.bouton {
+    display: block;
+    font-size: 1.3rem;
+    margin-top: 40px;
+    color: white;
+    background: linear-gradient(to right, #318ce7, #d5c043 );
+    border-radius: 100px;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.wrapper-section {
+    max-width: 1270px;
+    width: 100%; 
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.title-section {
+    position: relative;
+    width: 100%;
+    padding: 60px 0 40px;
+    height: 185px;
+}
+
+.title-section h1 {
+    z-index: 97;
+    background: linear-gradient(to right, #318ce7, #d5c043);
+    font-size: 5.5rem;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    padding: 15px 0;
+    -webkit-text-stroke: 5px transparent;
+    -webkit-background-clip: text;
+    
+}
+
+.title-section h2 {
+    z-index: 98;
+    font-size: 2.2rem;
+    color: black;
+    transform: translate(25px, -60px);
+
+}
+.title-section::after {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 1px;
+    background: linear-gradient(to right, #318ce7, #d5c043);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.text-citation {
+    font-size: 1.4rem;
+    background: linear-gradient(to left, #318ce7, #d5c043);
+    padding: 20px;
+    margin: 25px 0 25px 10px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; 
+}
+
+#Programmation {
+    width: 100%;
+    height: auto;
+    background-color: #f2f5ff;
+}
+
+.sous-section h1 {
+    z-index: 97;
+    background:#d5c043;
+    font-size: 3rem;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 200;
+    padding: 15px 0;
+    -webkit-text-stroke: 5px transparent;
+    -webkit-background-clip: text;
+}
+
+.sous-section h2 {
+    z-index: 98;
+    font-size: 2rem;
+    color: black;
+    transform: translate(25px, -50px);
+}
+
+.article-section img {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+}

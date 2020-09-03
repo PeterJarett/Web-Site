@@ -14,6 +14,12 @@ h2 {
     color: white;
 }
 
+h3 {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin: 45px 0 25px;
+}
+
 .bold {
     font-weight: bold;
     color: #26446d ;
@@ -167,7 +173,7 @@ p {
     width: 100%; 
     height: 100%;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 30px 40px 30px;
 }
 
 .title-section {
@@ -251,6 +257,10 @@ p {
     font-size: 2.5rem;
 }
 
+.sombre h4 {
+    color:white;
+}
+
 .sombre .title-section {height: 175px;}
 .sombre .title-section::after {
     height: 3px;
@@ -266,7 +276,7 @@ p {
     width: 60%;
     height: 400px;
     overflow: hidden;
-    margin: 35px auto;
+    margin: 50px auto;
 }
 
 .slides {
@@ -276,7 +286,7 @@ p {
 
 .slide {
     float: left;
-    position: relative;
+    position: relative; 
 }
 
 .slide img {
@@ -288,14 +298,8 @@ p {
     0%{
         transform: translateX(0);
     }
-    25%{
-        transform: translateX(-750px);
-    }
     50%{
-        transform: translateX(-1500px);
-    }
-    75%{
-        transform: translateX(-2250px);
+        transform: translateX(-750px);
     }
     100%{
         transform: translateX(0);
@@ -309,27 +313,82 @@ p {
     background-color: #f2f5ff;
 }
 
-.sous-section h1 {
-    z-index: 97;
-    background:#d5c043;
-    font-size: 3rem;
-    font-family: 'Epilogue', sans-serif;
-    font-weight: 200;
-    padding: 15px 0;
-    -webkit-text-stroke: 5px transparent;
-    -webkit-background-clip: text;
+.sous-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
 }
 
-.sous-section h2 {
-    z-index: 98;
-    font-size: 2rem;
-    color: black;
-    transform: translate(25px, -50px);
+.bloc {
+    width: 25%;
+    height: 400px;
+    margin: 50px 0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 12px 12px 2px 1px rgb(179, 179, 179);
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
+
+.bloc:hover {
+    transform: scale(1.1);
+    z-index: 99;
+    box-shadow: 6px 6px 6px 1px rgb(179,179,179);
+}
+
+.bloc-image {
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+.bloc-content {
+    height: 250px;
+    z-index: 98;
+    text-align: center;
+    background: #e7e7e7;
+}
+
+.bloc-content p {
+    text-align: justify;
+    padding: 0 25px;
+}
+
+.bloc-content a {
+    height: 40px;
+    display: block;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    color: rgb(15, 76, 241);
+    padding: 7px 15px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.bloc-image img {
+    z-index: 99;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+}
+
+#bloc-prog1 .bloc-content a {color: rgb(223, 54, 54);}
+#bloc-prog2 .bloc-content a {color: rgb(84, 50, 235);}
+#bloc-prog3 .bloc-content a {color: rgb(216, 233, 61);}
+
+#bloc-prog1 {background: rgb(223, 54, 54);}
+#bloc-prog2 {background: rgb(84, 50, 235);}
+#bloc-prog3 {background: rgb(216, 233, 61);}
+
+
+
 /* Contenu de la section electronique */
 #Electronique {
     width: 100%;
-    height: 110vh;
+    height: auto;
 }
 .sous-section-sombre h1{
     z-index: 97;
@@ -349,17 +408,89 @@ p {
     transform: translate(25px, -50px);
 }
 
-/* Contenu de la section reseaux */
-#Reseaux {
-    width: 100%;
-    height: 110vh;
-    background-color: #f2f5ff;
+.img-arduino {
+    width: 60%;
 }
 
-/* Contenu de la section cryptographie */
-#Cryptographie {
+#arduino-img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+#arduino {
+    color: #318ce7;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+.arduino {
     width: 100%;
-    height: 110vh;
+    height: auto;
+    display: flex;
+}
+
+.text-arduino {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.arduino-element {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    padding: 40px;
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    
+}
+
+.arduino-element::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+    opacity: 0;
+    transition: 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.arduino-element::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    bottom: 0;
+    right: 0;
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
+    opacity: 0;
+    transition: 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.arduino-element:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.arduino-element:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.arduino-element p {
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 /* Contenu de la section biographies */

@@ -12,12 +12,12 @@
         <nav class="top-barre">
             <div class="nav-content">
                 <ul class="menu">
-                    <li><a href="#Projets">Projets</a></li>
-                    <li><a href="#Programmation">Programmation</a></li>
-                    <li><a href="#Electronique">Electronique</a></li>
-                    <li><a href="#Reseaux">Réseaux</a></li>
-                    <li><a href="#Cryptographie">Cryptographie</a></li>
-                    <li><a href="#Biographies">Biographies</a></li>
+                    <li><a href="index.html#Projets">Projets</a></li>
+                    <li><a href="index.html#Programmation">Programmation</a></li>
+                    <li><a href="index.html#Electronique">Electronique</a></li>
+                    <li><a href="index.html#Reseaux">Réseaux</a></li>
+                    <li><a href="index.html#Cryptographie">Cryptographie</a></li>
+                    <li><a href="index.html#Biographies">Biographies</a></li>
                 </ul>
             </div>
         </nav>
@@ -84,16 +84,10 @@
                             <div class="slider">
                                 <div class="slides">
                                     <div class="slide">
-                                        <img src="images/1.jfif" alt="première image">
+                                        <a href="projets/projet1.html"><img src="images/1.jfif" alt="première image"></a>
                                     </div>
                                     <div class="slide">
-                                        <img src="images/2.jfif" alt="deuxième image">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="images/3.jpg" alt="troisième image">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="images/4.jpg" alt="quatrième image">
+                                        <a href="projets/projet2.html"><img src="images/2.jfif" alt="deuxième image"></a>
                                     </div>
                                 </div>
                             </div>
@@ -113,30 +107,40 @@
                             <p><span class="bold">Python, Java, C, Javascript, C++, C#, PHP, React ...</span></p>
                             <p>Il existe de nombreux langages de programmations, on les comptes par centaines et le nombre de cessera de s'accroître au fils des années. Voilà pourquoi il faut <span class="bold">rester attentif à l'évolution des langages.</span></p>
                             <p>Ils ont tous des avantages et des inconvénients, certains sont plus faciles à manier que d'autres mais globalement les structures des algorithmes restent les mêmes : </p>
-                            <p class="code">Si -> Alors -> Sinon si -> Alors -> Sinon -> Alors</p>
-                            <p>Je viens de vous montrer l'exemple type de la structure conditionelle.</p>
-                            <p>Dans la section programmation, sera référencée plusieurs langages que j'ai appris ou que je suis entrain d'apprendre. Certains <span class="bold">points des bases du langage</span>seront référencé et des <span class="bold">exercices</span>seront aussi proposés.</p> 
+                            <p>Dans la section programmation, sera référencée plusieurs langages que j'ai appris ou que je suis entrain d'apprendre. Certains <span class="bold">points des bases du langage</span>seront référencé et des <span class="bold">exercices</span> seront aussi proposés.</p> 
                             <p>Voilà, maintenant je te laisse choisir le langage qui t'attire le plus après avoir lu les présentations. Il ne te reste plus qu'à chercher, comprendre et apprendre.</p>
                         </div>
+                        <h3>Les différents langages</h3>
                         <div class="sous-section">
-                            <h1>02.1</h1>
-                            <h2>Le langage C</h2>
-                            <div class="article-section">
-
+                            <div id="bloc-prog1" class="bloc">
+                                <div class="bloc-image">
+                                    <img src="images/html.png" alt="logo html">
+                                </div>
+                                <div class="bloc-content">
+                                    <h3>HTML5 & CSS</h3>
+                                    <p>Je vous apprend ce langage de manière différentes. Vous allez créer votre site internet et pendant que vous aurez le plaisir de faire cela, vous aller chercher et apprendre sans le remarquer !</p>
+                                    <a href="htmlcss.html">Lire la suite</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sous-section">
-                            <h1>02.2</h1>
-                            <h2>HTLM5 & CSS3</h2>
-                            <div class="article-section">
-
+                            <div id="bloc-prog2" class="bloc">
+                                <div class="bloc-image">
+                                    <img src="images/c.png" alt="logo c">
+                                </div>
+                                <div class="bloc-content">
+                                    <h3>C</h3>
+                                    <p>J'apprends avec vous les bases d'un langage connu pour la DataScience et en même temps, je crée quelques petits projets bien sympa qui peuvent être utile dans la vie de tous les jours.</p>
+                                    <a href="c.html">Lire la suite</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sous-section">
-                            <h1>02.3</h1>
-                            <h2>Javascript</h2>
-                            <div class="article-section">
-
+                            <div id="bloc-prog3" class="bloc">
+                                <div class="bloc-image">
+                                    <img src="images/javascript.png" alt="logo javascript">
+                                </div>
+                                <div class="bloc-content">
+                                    <h3>Javascript</h3>
+                                    <p>Un langage qui va de paire avec le HTML5 et CSS3. Il est exclusivement orienté pour le web donc nous apprendrons le langage tout en continuant notre site internet.</p>
+                                    <a href="javascript.html">Lire la suite</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -148,96 +152,47 @@
                             <h2>Eléctronique</h2>
                         </div>
                         <div class="article-section">
-                            <div class="sous-section-sombre">
-                                <h1>03.1</h1>
-                                <h2>Electronique théorique</h2>
-                                <div class="article-section">
-
+                            <h3 id="arduino">Arduino</h3>
+                            <div class="arduino">
+                                <div class="text-arduino">
+                                   <div class="arduino-element">
+                                        <p>LED 13</p>
+                                   </div>
+                                   <div class="arduino-element">
+                                        <p>Servo-moteur</p>
+                                   </div>
+                                   <div class="arduino-element">
+                                        <p>Capteurs</p>
+                                   </div>
+                                </div>
+                                <div class="img-arduino">
+                                    <img id="arduino-img" src="images/arduino.png" alt="arduino image">
+                                </div>
+                                <div class="text-arduino">
+                                    <div class="arduino-element">
+                                        <p>LED</p>
+                                    </div>
+                                    <div class="arduino-element">
+                                        <p>LCD</p>
+                                    </div>
+                                    <div class="arduino-element">
+                                        <p>Résistance</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="sous-section-sombre">
-                                <h1>03.2</h1>
-                                <h2>Arduino</h2>
-                                <div class="article-section">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="Reseaux">
-                    <div class="wrapper-section">
-                        <div class="title-section">
-                            <h1>04</h1>
-                            <h2>Réseaux</h2>
-                        </div>
-                        <div class="article-section">
-                            <div class="sous-section">
-                                <h1>04.1</h1>
-                                <h2>Internet</h2>
-                                <div class="article-section">
-
-                                </div>
-                            </div>
-                            <div class="sous-section">
-                                <h1>04.2</h1>
-                                <h2>Modèle OSI</h2>
-                                <div class="article-section">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="Cryptographie" class="sombre">
-                    <div class="wrapper-section">
-                        <div class="title-section">
-                            <h1>05</h1>
-                            <h2>Cryptographie</h2>
-                        </div>
-                        <div class="article-section">
-
                         </div>
                     </div>
                 </section>
                 <section id="Biographies">
                     <div class="wrapper-section">
                         <div class="title-section">
-                            <h1>06</h1>
+                            <h1>04</h1>
                             <h2>Biographies</h2>
                         </div>
                         <div class="article-section">
                             <div class="sous-section">
                                 <h1>06.1</h1>
-                                <h2>Steve Jobs</h2>
-                                <div class="article-section">
-                                    
-                                </div>
-                            </div>
-                            <div class="sous-section">
-                                <h1>06.2</h1>
-                                <h2>Bill Gates</h2>
-                                <div class="article-section">
-                                    
-                                </div>
-                            </div>
-                            <div class="sous-section">
-                                <h1>06.3</h1>
-                                <h2>Edward Snowden</h2>
-                                <div class="article-section">
-                                    
-                                </div>
-                            </div>
-                            <div class="sous-section">
-                                <h1>06.4</h1>
-                                <h2>Mack Zuckerberg</h2>
-                                <div class="article-section">
-                                    
-                                </div>
-                            </div>
-                            <div class="sous-section">
-                                <h1>06.5</h1>
-                                <h2>Albert Einstein</h2>
+                                <h3>Steve Jobs</h3>
                                 <div class="article-section">
                                     
                                 </div>
